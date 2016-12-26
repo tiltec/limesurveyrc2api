@@ -134,6 +134,18 @@ class _Surveys(object):
         response = self.api.utils.request(data)
         return response
 
+    def export_responses(self, session_key, sid, document_type='json', language_code='en', completion_status='complete'):
+        params = OrderedDict([
+            ('sSessionKey', session_key),
+            ('iSurveyID', sid),
+            ('sDocumentType', document_type),
+            ('sLanguageCode', language_code),
+            ('sCompletionStatus', completion_status)
+        ])
+        data = self.api.utils.prepare_params('export_responses', params)
+        response = self.api.utils.request(data)
+        return response
+
 
 class _Tokens(object):
 
