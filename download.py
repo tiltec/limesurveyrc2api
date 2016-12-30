@@ -20,6 +20,7 @@ for survey in surveys:
         picture_list = []
         for _ in responses['responses']:
             for rid, response in _.items():
+                print(response)
                 if response['picture']:
                     pic_dict = json.loads(response['picture'])[0]
                     picture_list.append({'name': pic_dict['name'], 'rid': rid, 'sid': sid})
