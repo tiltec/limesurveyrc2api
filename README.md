@@ -1,6 +1,6 @@
 # Configuration
 
-Go into `config` directory, copy `secrets.sample.py` to `secrets.py` and enter your limesurvey username and password
+Go into `config` directory, copy `secrets.example.py` to `secrets.py` and enter your limesurvey username and password
 
 # Run
 
